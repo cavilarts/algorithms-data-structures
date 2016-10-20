@@ -1,0 +1,21 @@
+Stress testing techniques
+
+Testing Techniques
+
+	- A few small manual tests.
+	- A test for each possible type of answer (smallest answer, biggest answer, answer doesn't exist, etc.)
+	- Test for time/memory limit: generate a test with the largest possible size of input ("max test"), run your program, measure time and memory consumption.
+	- Tests for corner cases:
+	- Smallest possible "n": the length of the input sequence or string, the number of queries, etc.
+	- Equal numbers, equal letters in the string, more generally, equal objects in the input. Any two objects that are not restricted to be different in the problem statement can be equal.
+	- Largest numbers in the input allowed by the problem statement - for example, to test for integer overflow.
+	- Degenerate cases like empty set, three points on one line, a tree which consists of just one chain of nodes.
+
+Stress Test
+
+	- Solution you want to test
+	- A different possibly trivial and very slow, but easy to implement and obviously correct solution to the problem
+	- A test generator
+	- An infinite loop in which a new test is generated , it is fed into both solutions , then the resutls are compared, and if thet differ, the ests and both answers are output, and the program stops, otherwise the loop repeats
+
+
