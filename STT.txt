@@ -18,4 +18,12 @@ Stress Test
 	- A test generator
 	- An infinite loop in which a new test is generated , it is fed into both solutions , then the resutls are compared, and if thet differ, the ests and both answers are output, and the program stops, otherwise the loop repeats
 
+Key take always
 
+	- It is very important to write programs that work correctly on all the allowed inputs.
+	- Testing is essential to writing correct programs.
+	- First test on a few small manual tests, then test for each type of answer, then test on large test cases for time limit and memory limit, then test on corner cases.
+	- After that, apply stress testing to ensure your program works - it will almost always lead to correct solution. You can do it before your first attempt to submit your solution - and will often get it right from the first attempt!
+	- Stress testing consists of implementing the intended solution, another simple possible slow solution, a test generator and an infinite loop which generates tests and compares answers of the two solutions.
+	- Always try to find the smallest test cases on which your solution fails.
+	- Try different regions of the test space when generating cases for stress testing
